@@ -1,0 +1,15 @@
+# Language Characterstics 
+
+1. **Strong, static type system** Every symbol, every keyword that we type within your go programs has a meaning for the compiler, and those meanings can't change over time. So when we declare variable of a certailn type, maybe it's a string that variable will always be a string, and the defination of  a string will not change throughout the execution of the program. 
+
+2. **C-inspired Syntax** C is one of the most polpular syntaxes in the world today. So whether you are using C++ or JavaScript or JAVA or python, all of those languages derive their basic syntax from C. So in order to embrace simplicity and allow Go to be recognized by widest possible audience, The C syntax was used as the basis for the language.
+
+3. **Garbage Collected** Go is garbage collected. Now this was actually a conntroversial decision when Go came out, But let's think about why Go might have selected to use garbage collector. Because of the simplicity. By having garbage-collected language, which does has performance ramifications, but we allow developer ergonomics to be increased, and managing GO programs is simpler because we don't have to worry about cleaning up after ourselves when we are done using memory. when we are done using a variable or an object, Go recognizes that and it's going to clean the memory up for us. 
+
+4. **Fully Compiled** This gets to the idea of having efficient execution. we want fully compiled languages so that every time youu are running Go on a system, The compiler has the opportuunity to tune and optimize the compilation process and the resulting binary to work optimally with that system. 
+
+5. **Rapid compilation** Go fights very hard to combine and balance fully compiled and rapid compilation requirements. Most go proggrams complie so quickly that it almost looks like you are running a scripting language like python. This is done by heavy optimization of the Go compiler.
+
+6. **Single Binary Outputs** Go opts for single binary output as its default compilation artifact. This means that while you can have shared libraries in GO, that is not the norm. instead go compiles everything, all the libraries and main application code into a single binary for deployment. This makes deployment with GO often trivial because all you need to do to deploy a Go application is copy the binnary to the container and start the container up. 
+
+7. **Cross platform** Go is cross platform, the nature of software development today is that software will be executed on different platforms. You might be using MAc, or linux cluster, you need the same code to work in a reliable, consistent manner across those platforms. Go support that using platform specific compilers that take a common codebase annd compile that down to a binary that's optimize to run on each given platform. 
